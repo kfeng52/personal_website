@@ -3,6 +3,15 @@ body {
     padding: 0;
 }
 
+.background {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-image: url(/image/image\ 18.png);
+    background-size: cover;           
+    background-position: center;      
+    background-repeat: no-repeat;
+}
 
 /* 1) Position & basic flex layout */
 .site-header {
@@ -10,9 +19,6 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
     background-color: rgba(50, 50, 50, 0.5);
     z-index: 10;
   }
