@@ -1,135 +1,157 @@
-body {
-    margin: 0;
-    padding: 0;
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+
 
 .background {
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: auto;
-    background-image: url(/image/image\ 18.png);
+    min-height: 100vh;
+    background-image: url(/image/kevin_headshot_ai2.3.jpg);
     background-size: cover;           
     background-position: center;      
     background-repeat: no-repeat;
 }
 
 /* 1) Position & basic flex layout */
-.site-header {
+/* .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
     background-color: rgba(50, 50, 50, 0.5);
     z-index: 10;
-  }
-  
+    padding: 0 7rem;
+} */
 
-  .logo img {
-    height: 7rem; 
-    width: auto;
-    display: block;
-    padding-left: 2rem;
-  }
-  
-  .nav-container {
+  .site-header {
     display: flex;
-    gap: 4rem;
-    padding: 1rem 3rem;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /* background-color: rgba(50, 50, 50, 0.5); */
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem; /* Optional: small buffer on very small screens */
   }
   
-  .nav-container a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-family: 'Inter';
-  }
 
-  .special {
-    background-color: black;             
-    border-radius: 0.7rem;
-    padding: 0.7rem;
-  }
+.logo img {
+  height: 7rem; 
+  width: auto;
+  display: block;
+  padding-left: 2rem;
+}
+
+.nav-container {
+  display: flex;
+  gap: 4rem;
+  padding: 1rem 3rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-container a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: 'Inter';
+}
 
 
 /* 3) Hero Section */
 .hero {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
   padding-left: 10rem;
   color: white;
   }
 
-  /* Left column: text + buttons */
-  .hero-content {
-    max-width: 40vw; /* stop it getting too wide on large screens */
-  }
-  .hero-content h1 {
-    font-size: 8rem;
-    font-family: 'Inter';
-    color: white;
-  }
-  .hero-content p {
-    font-size: 2rem;
-    font-family: 'Inter';
-    color: rgb(209, 209, 209);
-  }
-  .cta {
-    display: flex;
-    gap: 1rem;
-  }
-  .btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: rgba(0,0,0,0.6);
-    color: white;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background 0.2s;
-  }
+.hero h1 {
+  font-size: 8rem;
+  font-family: 'Inter';
+  color: white;
+  padding-top: 7rem;
+  text-shadow: 3px 1px #0e1f07;
+}
+.hero p {
+  font-size: 2rem;
+  font-family: 'Inter';
+  color: rgb(231, 231, 231);
+  padding: 3rem 0;
+  max-width: 40vw;
+  text-shadow: 1px 1px #0e1f07;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-h1 {
-    color: black;
-    font-size: 105px;
-    font-family: 'Inter';
-    display: grid;
-    
+.home-screen-button {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.4rem;
 }
 
 
-
-
-
+.btn {
+  font-family: 'Inter';
+  padding: 0.75rem 1.5rem;
+  background: rgba(0,0,0);
+  color: white;
+  border-radius: 1rem;
+  text-decoration: none;
+}
 
