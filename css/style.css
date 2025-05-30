@@ -68,29 +68,22 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
 }
 
-/* 1) Position & basic flex layout */
-/* .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    background-color: rgba(50, 50, 50, 0.5);
-    z-index: 10;
-    padding: 0 7rem;
-} */
+.site-header-bar{
+  background-color: rgba(50, 50, 50, 0.5);
+  width: 100%;
+}
 
-  .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: rgba(50, 50, 50, 0.5); */
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 1rem; /* Optional: small buffer on very small screens */
-  }
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgba(50, 50, 50, 0.5); */
+  max-width: 1700px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem; /* Optional: small buffer on very small screens */
+}
   
-
 .logo img {
   height: 7rem; 
   width: auto;
@@ -155,3 +148,34 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    background-color: rgba(50, 50, 50, 0.5);
+    z-index: 10;
+    padding: 0 7rem;
+} */
