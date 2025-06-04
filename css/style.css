@@ -112,22 +112,22 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 10rem;
+  padding-left: 7rem;
   color: white;
   }
 
 .hero h1 {
-  font-size: 8rem;
+  font-size: 7rem;
   font-family: 'Inter';
   color: white;
-  padding-top: 7rem;
-  text-shadow: 3px 1px #0e1f07;
+  padding-top: 3rem;
+  /* text-shadow: 3px 1px #0e1f07; */
 }
 .hero p {
   font-size: 2rem;
   font-family: 'Inter';
   color: rgb(231, 231, 231);
-  padding: 3rem 0;
+  padding: 2rem 0;
   max-width: 40vw;
   text-shadow: 1px 1px #0e1f07;
 }
